@@ -1,0 +1,5 @@
+/* pages/lostHistory/lostHistory.wxss */
+.notice-container {
+  background-color: #f2f2f2;
+  padding-top: 180rpx;
+}

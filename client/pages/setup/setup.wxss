@@ -1,0 +1,28 @@
+/* pages/setup/setup.wxss */
+
+.whole-view{
+  border-top: solid #e6e6e6 15px;
+  border-bottom: solid #d9d9d9 0.5px;
+}
+
+.view{
+  width: 100%;
+  height: 30px;
+  margin: 0 10px 0 10px;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.view-match{
+  border-bottom: solid #d9d9d9 0.5px;
+}
+
+.text{
+  height: 100%;
+  line-height: 28px;
+}
+
+.switch{
+  margin-right: 30px;
+}

@@ -1,0 +1,60 @@
+<!--pages/info/info.wxml-->
+
+
+
+<view>
+<image src='' class="img-lemon"></image>
+</view>
+
+<form bindsubmit="formSubmit">
+<view class="form-cell">
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">学校：</view>
+  </view>
+  <view class="weui-cell__bd">
+    <input class="weui-input" value="{{school}}" name="school" confirm-type="next" bindconfirm='inpSchool' focus='{{schFocus}}'/>
+  </view>
+</view>           
+
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">学院：</view>
+  </view>
+  <view class="weui-cell__bd">
+    <input class="weui-input" value="{{college}}" name="college" confirm-type="next" bindconfirm='inpCollege' focus='{{colFocus}}'/>
+  </view>
+</view>
+
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">姓名：</view>
+  </view>
+  <view class="weui-cell__bd">
+    <input class="weui-input" value="{{name}}" name="name" confirm-type="next" bindconfirm='inpName' focus='{{namFocus}}'/>
+  </view>
+</view>
+
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">学号：</view>
+  </view>
+  <view class="weui-cell__bd">
+    <input class="weui-input" value="{{studentID}}" name="studentID" confirm-type="next" bindconfirm='inpID' focus='{{idFocus}}'/>
+  </view>
+</view>
+
+<view class="weui-cell weui-cell_input">
+  <view class="weui-cell__hd">
+    <view class="weui-label">电话：</view>
+  </view>
+  <view class="weui-cell__bd">
+    <input class="weui-input" value="{{phoneNumber}}" name="phoneNumber" confirm-type="done"  focus='{{phoFocus}}'/>
+  </view>
+</view>
+</view>
+
+<view class="weui-btn-area">
+  <button class="weui-btn" type="primary" formType="submit">确定</button>
+</view>
+</form>

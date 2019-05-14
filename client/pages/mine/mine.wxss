@@ -1,0 +1,121 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  height: 400rpx;
+  width: 100%;
+  align-items: center;
+  background-image:url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525181998&di=f787544ae2ebb060d291b02eaa56d183&imgtype=jpg&er=1&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F15%2F56%2F52%2F05658PIC3Vf_1024.png);
+  background-size:cover;
+  top:0px;
+
+ 
+}
+
+.userinfo-avatar {
+  width: 200rpx;
+  height: 200rpx;
+  
+  border-radius: 50%;
+  position:absolute;
+  top:80rpx;
+}
+
+.userinfo-nickname {
+  color: black;
+
+}
+
+.name{
+  display: flex;
+  flex-direction: row;
+  position:absolute;
+  top:290rpx;
+}
+
+.rename{
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.list{
+  background-color: yellow;
+  width:100%;
+  height: 400px;
+
+}
+
+.weui-cells {
+  width: 100%;
+  position: relative;
+  margin-top: 1.17647059em;
+  background-color: #FFFFFF;
+  line-height: 1.41176471;
+  font-size: 17px;
+}
+
+.weui-cell {
+  padding: 10px 15px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.weui-cell:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;
+  border-top: 1rpx solid #D9D9D9;
+  color: #D9D9D9;
+  left: 15px;
+}
+
+.weui-cell__bd{
+  margin-left: 20px;
+}
+
+.weui-cell_active {
+  background-color: #ECECEC;
+}
+
+.weui-cell_access {
+  color: inherit;
+}
+
+.weui-cell__ft {
+  text-align: right;
+  color: #999999;
+}
+
+.weui-cell__ft_in-access {
+  padding-right: 13px;
+  position: relative;
+
+  text-align: right;
+  color: #999999;
+}
+
+
+
+
+.header{
+  color: #888;
+}
+
+.bg-img{
+  width: 50px;
+  height:30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

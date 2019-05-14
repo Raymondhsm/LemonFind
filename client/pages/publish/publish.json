@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "sign": "/components/sign/sign"
+  },
+  "navigationBarTitleText": "发布"
+}

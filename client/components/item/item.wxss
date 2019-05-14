@@ -1,0 +1,89 @@
+/* components/item/item.wxss */
+.item-container {
+  margin: 0 10rpx 20rpx 10rpx;
+  background-color: white;
+  padding: 20rpx 10rpx;
+  box-shadow: 0 2rpx 1rpx 1rpx #efefef;
+  border-radius: 1%;
+
+}
+
+.item {
+  display: flex;
+  /*不知道需不需要width:100%.*/
+}
+
+.item-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-tags {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+.item-tag {
+  padding: 5rpx 8rpx;
+  background-color: #FFA81C;
+  border-radius: 10%;
+  color: white;
+  opacity: 0.8;
+  font-size: 30rpx;
+}
+
+.item-alias {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10%;
+}
+
+.item-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: flex-start;
+  padding: 0 20rpx;
+  overflow: hidden;
+}
+
+.item-name {
+  padding-bottom: 15rpx;
+  color: #666;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.item-description {
+  margin-right: 15rpx;
+  margin-bottom: 12rpx;
+  font-size: 25rpx;
+}
+
+.item-imageList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10rpx 2rpx;
+}
+
+.item-image {
+  margin: 0 10rpx 0 0;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 5%;
+}
+
+.item-location {
+  color: #40E8AD;
+  font-size: 22rpx;
+}
+
+.item-time {
+  margin-top: 10rpx;
+  font-size: 20rpx;
+  color: #bfbfbf;
+}

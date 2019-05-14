@@ -1,0 +1,169 @@
+/* pages/publish/publish.wxss */
+
+
+.button{
+  width: 100%;
+  height: 28px;
+  display: flex; 
+  flex-direction: row;
+  justify-content : center;
+  margin:30px 0 20px 0;
+}
+
+.btnSelect{
+  background: orange;
+}
+
+.btnNotSelect{
+  background: white;
+}
+
+.btnPick{
+  margin-right: 10px;
+}
+
+.btnLose{
+  margin-left: 10px;
+}
+
+.box{
+  width: 100px;
+  height: 28px;
+  float: left;
+  line-height: 27px;
+  border: none;
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.view-info{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 0 0 15px;
+}
+
+.view-chooce{
+  width: 100%;
+  height: 111px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.labInfo{
+  min-width:70px;
+  height: 32px;
+  padding-top: 8px;
+}
+
+.brand-view{
+  width: 80%;
+  height: 30px;
+  border: solid greenyellow 0.5px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 10%;
+}
+
+.brand-input{
+  width: 70%;
+  height: 100%;
+  margin: 0 5px 0 15px;
+}
+
+.brand-button{
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  line-height: 30px;
+  color: green;
+  background: none;
+  border: none;
+  border-radius: 15px;
+}
+
+.remark{
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+}
+
+.remark-text{
+  width: 70px;
+  padding: 8px 0 0 15px;
+}
+
+.remark-input{
+  min-height: 30px;
+  max-height: 90px;
+  padding-left: 15px;
+  padding-top: 10px;
+  line-height: 3px;
+  margin-bottom: 10px;  
+}
+
+.image-input {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.addPhoto{
+  width: 80px;
+  height: 80px;
+}
+
+.selected-image-box {
+  position: relative;
+  width: 80px;
+  margin:0  5px;
+}
+
+.icon-cancel {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 16px;
+  height: 16px;
+}
+
+
+.delete-photo{
+  width: 7px;
+  height: 7px;
+}
+
+.test{
+  background: '/image/icon/delete.png';
+}
+
+.view-position{
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.position{
+  width: 25px;
+  height: 25px;
+}
+
+.position-text{
+  width: 200px;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.button{
+  width: 700rpx;
+  height: 50px;
+  margin:10px 25rpx 0 25rpx;
+}

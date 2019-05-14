@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的失物",
+  "usingComponents": {
+    "item": "../../components/item/item"
+  }
+}

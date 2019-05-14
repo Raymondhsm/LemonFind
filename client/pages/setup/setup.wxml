@@ -1,0 +1,14 @@
+<!--pages/setup/setup.wxml-->
+
+<view class='whole-view'>
+  <view class='view view-match'>
+    <text class='text'>接收匹配成功提醒</text>
+    <switch class='switch' name='match' checked='{{match}}' bindchange='Match'></switch>
+  </view >
+
+  <view class='view'>
+    <text class='text'>接收留言消息提醒</text>
+    <switch class='switch' name='message' checked='{{message}}' bindchange='Message'></switch>
+  </view >
+
+</view>

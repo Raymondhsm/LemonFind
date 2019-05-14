@@ -1,0 +1,6 @@
+<!--pages/lostHistory/lostHistory.wxml-->
+<view class='notice-container'>
+  <view wx:for='{{noticeList}}' wx:key='id'>
+    <item id='{{item.id}}'  nickname='{{user_info.nickName}}' avatar='{{user_info.avatarUrl}}' tags='{{item.name}}'  description='{{item.description}}' time='{{item.time}}' imageList='{{item.images}}' location='{{item.location}}'></item>
+  </view>
+</view>

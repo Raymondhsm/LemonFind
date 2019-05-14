@@ -1,0 +1,63 @@
+<!--pages/publish/publish.wxml-->
+
+<view class='button'>
+  <view class='{{btnPick}} btnPick box' bindtap='tapPick'>捡到</view>
+  <view class='{{btnLose}} btnLose box' bindtap='tapLose'>丢失</view>
+</view>
+
+<view style='width=100%'>
+  <view class='view-info weui-cell' bindtap='tapGoods'>
+    <label class='labInfo '>物品：</label>
+    <sign wx:if='{{value[0]!=null}}' value='{{value[0]}}' mode="select" binddeleteSign='deleteSign' id="0"></sign>
+  </view>
+  <view class='view-chooce' wx:if='{{option=="goods"}}'>
+    <sign wx:for='{{goodsSigns}}' wx:key='id' value='{{item.value}}' width='{{item.width}}' mode='show' bindbeSelected='beSelected' data-index="{{ index }}" data-detail="{{item}}"></sign>
+  </view>
+</view>
+
+<view style='width=100%'>
+  <view class='view-info weui-cell' bindtap='tapBrand'>
+    <label class='labInfo'>{{value[0]!="饭卡"?(value[0]!="证件"?"品牌":"号码"):"学号"}}</label>
+    <sign wx:if='{{value[1]!=null}}' value='{{value[1]}}' mode="select" binddeleteSign='deleteSign' id="1"></sign>
+  </view>
+  <form wx:if='{{option=="brand"}}' bindsubmit='beSelected'>
+    <view class='brand-view'>
+      <input class='brand-input' focus='true' name='brand'></input>
+      <button class='brand-button' formType='submit'>确定</button>
+    </view>
+  </form>
+</view>
+
+<view style='width=100%'>
+  <view class='view-info weui-cell' bindtap='tapColor'>
+    <label class='labInfo'>颜色：</label>
+    <sign wx:if='{{value[2]!=null}}' wx:for='{{colorValue}}' wx:key='id' value='{{colorValue[index]}}' width='155rpx' mode="select" binddeleteSign='deleteSign' data-index='{{index}}' id="{{colorCounter}}"></sign>
+  </view>
+  <view class='view-chooce' wx:if='{{option=="color"}}'>
+    <sign wx:for='{{colorSigns}}' wx:key='id' value='{{item.value}}' width='150rpx' mode='{{mode[index]}}' bindbeSelected='beSelected' data-index="{{ index }}" data-detail="{{item}}"></sign>
+  </view>
+</view>
+
+<form bindsubmit='submit' report-submit='true'>
+<view class='remark'>
+  <text class='remark-text'>备注：</text>
+  <textarea class='remark-input' placeholder='随便描述一下呗~~' value='{{noneValue}}' bindfocus='remarkTap' name='remark'></textarea>
+</view>
+
+<view class='image-input'>
+  <view class='selected-image-box' wx:for='{{imagePath}}' wx:key='id'>
+    <image  class='addPhoto' src='{{item}}' bindtap='preview' data-index='{{index}}' />
+    <image src='/images/icons/delete-red.png' class='icon-cancel' bindtap='deleteImage' data-index='{{index}}'/>
+  </view>
+  <image wx:if='{{imagePath.length<3}}' class='addPhoto' src='/images/icons/addImg.png' bindtap='addPhoto' />
+</view>
+
+<view class='view-position'>
+  <image class='position' src='/images/icons/position.png'></image>
+  <input class='position-text' placeholder='点击编辑位置'  value='{{noneValue}}' name='position'></input>
+</view>
+
+<view>
+  <button class='button' type='primary' formType='submit'>确定</button>
+</view>
+</form>

@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/publish/publish",
+    "pages/index/index",
+    "pages/test/test",
+    "pages/addCgi/addCgi",
+    "pages/mine/mine",
+    "pages/aboutUs/aboutUs",
+    "pages/setup/setup",
+    "pages/info/info",
+    "pages/history/history",
+    "pages/comment/comment"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#FFE12D",
+    "navigationBarTitleText": "柠檬觅",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#FFE12D",
+    "backgroundColor": "",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icons/home.png",
+        "selectedIconPath": "images/icons/home-selected.png"
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "iconPath": "images/icons/publish.png",
+        "selectedIconPath": "images/icons/publish-selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "images/icons/me.png",
+        "selectedIconPath": "images/icons/me-selected.png"
+      }
+    ]
+  }
+}

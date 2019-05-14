@@ -1,0 +1,43 @@
+<!--pages/comment/comment.wxml-->
+
+
+
+
+<scroll-view scroll-y='true' class='comment-container'>
+  <item id='{{goods.id}}' nickname='{{user_info.nickName}}' avatar='{{user_info.avatarUrl}}' tags='{{goods.name}}' description='{{goods.description}}' imageList='{{goods.images}}' location='{{goods.location}}' time='{{goods.time}}'></item>
+  <view class='comment' wx:for='{{commentArray}}' wx:key='id'>
+    <view class='left'>
+      <image src="{{item.user_info['avatarUrl']}}" mode='aspectFit' class='avatar' />
+    </view>
+
+    <view class='right'>
+      <view class='nickName-view'>
+        <text class='nickName'>{{item.user_info['nickName']}}</text>
+        <view class='tapview' wx:if='{{canReply&&(!item.reply)}}' bindtap='reply'  data-index="{{ index }}">
+          <text>回复</text>
+        </view>
+      </view>
+      <text class='message'>{{item.message}}</text>
+
+      <view class='reply-view' wx:if='{{item.reply}}'>
+        <view class='author-view'>
+          <view class='line'></view>
+          <text class='author'>作者</text>
+        </view>
+        <view>
+          <text class='reply'>{{item.reply}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view class='fixed'>
+<form report-submit='true' bindsubmit='submit'>
+  <view class='form'>
+    <textarea class='input' placeholder='说点什么呗' value='{{noneValue}}' name='message' focus='{{focus}}'></textarea>   
+    <button class='button' form-type='submit'>{{mode}}</button>
+  </view>
+</form>
+</view>
+

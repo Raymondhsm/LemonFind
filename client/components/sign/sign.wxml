@@ -1,0 +1,12 @@
+<!--pages/component/sign.wxml-->
+
+<view class='sign {{mode=="tap"?"isSelected":""}}' style='width:{{width}}' catchtap='{{mode=="select"?"":"IsSelect"}}'>
+  <view class='sign-text-container'>
+  <text class='sign-text' wx:if='{{mode=="show"}}'>{{value}}</text>
+  </view>
+  <text class='sign-text-tap' wx:if='{{mode=="tap"}}'>{{value}}</text>
+  <text class='sign-text-select' wx:if='{{mode=="select"}}'>{{value}}</text>
+  <block wx:if="{{mode=='select'}}">
+   <image class='sign-image' src="/images/icons/delete.png" catchtap='removeSign'></image>
+  </block>
+</view>

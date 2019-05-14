@@ -1,0 +1,41 @@
+/* pages/component/sign.wxss */
+
+.sign{
+  width: 80rpx;
+  height: 54rpx;
+  border: solid greenyellow 0.5rpx;
+  border-radius: 15rpx;
+  margin: 2.5rpx 8rpx;
+}
+
+.sign-text-container{
+  text-align: center;
+}
+
+.sign-text{
+  line-height: 54rpx;
+}
+
+.sign-text-select{
+  line-height: 54rpx;
+  margin-left: 15rpx;
+}
+
+.sign-text-tap{
+  line-height: 54rpx;
+  color: grey;
+  margin-left: 15rpx;
+}
+
+.sign-image{
+  width: 40rpx;
+  height: 40rpx;
+  float: right;
+  margin-right: 10rpx;
+  padding-top: 7rpx;
+}
+
+.isSelected{
+  border: solid grey 0.5px;
+}
+

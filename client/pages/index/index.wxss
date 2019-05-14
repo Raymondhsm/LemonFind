@@ -1,0 +1,257 @@
+.top-container {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  background-color: white;
+}
+/*选择框----start*/
+.pick-or-lose {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+
+.top {
+  position: relative;
+  padding: 20rpx 20rpx;
+  margin: 0 20rpx;  /*让下边框短一点不到左右边*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 2;
+}
+
+.text {
+  font-size: 30rpx;
+  color: inherit;/*用于继承变化的颜色*/
+}
+
+.selected {
+  border-bottom: 4rpx solid #FFE12D;
+  color: #FFE12D;
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20rpx;
+  padding: 20rpx 20rpx;
+  border-left: 2rpx solid #bfbfbf;
+  flex-grow: 1;
+}
+
+.sort-image {
+  width: 40rpx;
+  height: 40rpx;
+}
+/*选择框----end*/
+
+/*搜索----start*/
+.search {
+  width: 100%;
+  padding: 10rpx 10rpx;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.search-element {
+  width: 520rpx;
+  padding: 5rpx 10rpx;
+  border: 2rpx solid #bfbfbf;
+  border-radius: 60rpx;
+  box-shadow: 0 0 5rpx 2rpx #bfbfbf;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-input {
+  margin-left: 8rpx;
+  width: 450rpx;
+  font-size: 35rpx;
+  text-indent: 5rpx;
+}
+
+.lemon-img {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.search-button {
+  background: linear-gradient(to right,#E89F0C,#FFE12D);
+  border-radius: 30rpx;
+  font-size: 30rpx;
+ }/*<view class='search-button'><text>搜索</text></view> */
+
+ /*搜索----end*/
+
+ /*历史记录----start*/
+ .history-search {
+   position: absolute;
+   z-index: 2;
+   left:0;
+   width: 540rpx;
+   margin-left: 10rpx;
+   background-color: white;
+   border: 2rpx solid #bfbfbf;
+   box-shadow: 0 2rpx 5rpx 1rpx #bfbfbf;
+ }
+
+ .history-title {
+   position: relative;
+   border-top: 1rpx solid #bfbfbf;
+   margin: 20rpx  20rpx 0;
+   height: 20rpx;
+   display: flex;
+   justify-content: center;
+ }
+
+ .history-title-text {
+   position: absolute;
+   top: -20rpx;
+   padding: 0 20rpx;
+   background-color: #f8f8f8;
+   font-size: 30rpx;
+ }
+
+ .search-history-element {
+   position: relative;
+   padding: 10rpx 20rpx;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+ .history-text {
+   display: block;
+   color: #222;
+   width: 400rpx;
+   max-width: 400rpx;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   font-size: 25rpx;
+   overflow: hidden;
+ }
+
+ .history-delete {
+   display: absolute;
+   top: 0;
+ }
+
+/*筛选图----start*/
+.sort-section {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sort-shadow {
+  width: 20%;
+  height: 100vh;
+  background-color: rgba(191, 191, 191, 0.2)
+}
+
+ .sort-container {
+   width: 80%;
+   height: 100vh;
+   background-color: white;
+ }
+
+ .goods-feature {
+   padding: 20rpx;
+   border-bottom: 1px solid #bfbfbf;
+   font-size: 30rpx;
+ }
+
+ .goods-feature-title {
+   display: block;
+   font-size: 35rpx;
+   padding: 10rpx;
+   color: #5f5f5f;
+ }
+
+ .goods-options { 
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+ }
+
+ .goods-option {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 25%;
+   height: 70rpx;
+   margin-right: 15rpx;
+   margin-bottom: 15rpx;
+   border-radius: 10%;
+   background-color: #f8f8f8;
+ }
+
+.option-selected {
+  color: orange;
+  background-color: #FFEFD4;
+}
+
+.sort-button-container {
+  display: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+  background-color: #E89F0C;
+}
+
+.sort-button {
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  height: 70rpx;
+  color: white;
+  letter-spacing: 10rpx;
+}
+
+.sort-clear {
+  width: 50%;
+  text-align: center;
+}
+
+.sort-confirm {
+  width: 50%;
+  text-align: center;
+}
+
+/*筛选----end*/
+
+.notice-container {
+  background-color: #f2f2f2;
+  padding-top: 175rpx;
+}
+
+.add-Img{
+   width: 150rpx;
+   height: 150rpx;
+}
+
+.blank {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+}
+
+.blank-text {
+  font-size: 40rpx;
+  letter-spacing: 20rpx;
+  color: #bfbfbf;
+}

@@ -1,0 +1,22 @@
+<!--components/item/item.wxml-->
+<view class='item-container'>
+  <view class='item'>
+    <view class='item-left'>
+      <image class='item-alias' src='{{avatar}}' mode='aspectFill'></image>
+      <view class='item-tags'>
+        <text class='item-tag'>{{tags}}</text>
+      </view>
+    </view>
+    <view class='item-right'>
+      <text class='item-name'>{{nickname}}</text>
+      <text class='item-description'>{{description}}</text>
+      <view class='item-imageList' wx:if='{{imageList.length!=0}}'>
+        <block wx:for='{{imageList}}' wx:key='*this' >
+          <image class='item-image' src='{{item}}' data-src='{{item}}' catchtap='previewImg' mode='aspectFill'></image>
+        </block>
+      </view>
+      <text class='item-location'>{{location}}</text>
+      <text class='item-time'>{{time}}</text>
+    </view>
+  </view>
+</view>

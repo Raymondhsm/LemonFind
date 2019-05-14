@@ -1,0 +1,15 @@
+/* pages/info/info.wxss */
+
+@import '/weui.wxss';
+
+.img-lemon{
+  width:100%;
+  height:60px;
+  margin-bottom: 5%;
+}
+
+.form-cell{
+  border-top: solid 1px #d9d9d9;
+  border-bottom: solid 1px #d9d9d9;
+}
+

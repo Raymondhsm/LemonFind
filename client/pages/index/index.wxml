@@ -1,0 +1,92 @@
+<view class='top-container'>
+  <view class="pick-or-lose">
+    <view class='top {{stayPickNotice?"selected":""}}' bindtap='showPickNotice'>
+      <text class='text'>失物招领</text>
+    </view>
+    <view class='top {{stayPickNotice?"":"selected"}}' bindtap='showLoseNotice'>
+      <text class="text">寻物启事</text>
+    </view>
+    <view class='sort' bindtap='showSort'>
+      <text class='text'>筛选</text>
+      <image src='/images/filter.png' mode='aspectFit' class='sort-image'></image>
+    </view>
+  </view>
+  <view class='search'>
+    <view class='search-element'>
+      <icon type='search' size='15' color='#bfbfbf' />
+      <input class='search-input' value='{{searchKey}}' type='text' confirm-type='search' bindblur='hideHistory' bindfocus='showHistory' bindinput='inputSearch' bindconfirm='onSearch'></input>
+      <image src='/images/lemon.png' mode='aspectFit' class='lemon-img'></image>
+      <!--或者在这里设置一个叉叉把输入的内容一次删除-->
+    </view>
+    <button class='search-button' size='mini' bindtap='onSearch'>搜索</button>
+  </view>
+  <view class='history-search' wx:if='{{showHistory}}'>
+    <view class='history-title'>
+      <text class='history-title-text'>历史搜索</text>
+    </view>
+    <view class='search-history-element' wx:for='{{history}}' wx:key='*this'>
+      <text class='history-text' data-index='{{index}}' catchtap='searchByHistory'>{{item}}</text>
+      <icon class='history-delete' type='clear' size='20' color='#bfbfbf' catchtap='removeItem' data-index='{{index}}' />
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class='notice-container'>
+  <view wx:if='{{noticeList.length==0}}' class='blank'>
+    <text class='blank-text'>空空如也~~</text>
+  </view>
+  <view wx:for='{{noticeList}}' wx:key='id' bindtap='getDetails' data-index='{{index}}'>
+    <item id='{{item.id}}'  nickname='{{item.user_info.nickName}}' avatar='{{item.user_info.avatarUrl}}' tags='{{item.name}}'  description='{{item.description}}' time='{{item.time}}' imageList='{{item.images}}' location='{{item.location}}'></item>
+  </view>
+</view>
+
+<!-- <image src='../../images/addImg.png' mode='aspectFit' class='add-Img' bindtap=''></image> -->
+
+<view class='sort-section' hidden='{{!showSort}}'>
+  <view class='sort-shadow' catchtap='hideSort'>
+  </view>
+  <view class='sort-container'>
+    <view class='goods-feature'>
+      <text class='goods-feature-title'>物品</text>
+      <view class='goods-options'>
+        <view class='goods-option {{typeOptions[index]?"option-selected":""}}' wx:for='{{goodsTypeOptions}}' wx:key='*this'  bindtap='switchTypeSelected' data-index='{{index}}'>
+          <text>{{item}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='goods-feature'>
+      <text class='goods-feature-title'>颜色</text>
+      <view class='goods-options'>
+        <view class='goods-option {{colorOptions[index]?"option-selected":""}}' wx:for='{{goodsColorOptions}}' wx:key='*this' bindtap='switchColorSelected' data-index='{{index}}'>
+          <text>{{item}}</text>
+        </view>
+      </view>
+    </view>
+    <!-- <view class='goods-lost-time'>
+      <text>时间</text>
+      <view class="section">
+        <view class="section__title">日期选择器</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">
+            当前选择: {{date}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class='goods-lost-location'>
+    </view> -->
+    <view class='sort-button-container'>
+      <view class='sort-button'>
+        <view class='sort-clear' catchtap='clearSelections'>
+          <text>重置</text>  
+        </view>
+        <view class='sort-confirm' catchtap='confirmSelections'>
+          <text>完成</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

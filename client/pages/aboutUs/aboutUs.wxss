@@ -1,0 +1,15 @@
+/* pages/aboutUs/aboutUs.wxss */
+
+.lemon{
+  display: flex;
+  flex-direction: column;
+}
+
+.textBig{
+  font-size: 70rpx;
+  text-align: center;
+  color: orange;
+}
+
+.textLemon{
+}

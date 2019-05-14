@@ -1,0 +1,8 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+
+<view class='lemon'>
+<text class='textBig'>尽我所能</text>
+<text class='textBig'>觅你所想</text>
+<text class='textLemon'>柠檬蜜团队</text>
+<text class='textFind'>联系我们：xxxx@qq.com</text>
+</view>
